@@ -21,4 +21,6 @@ WORKDIR /app/
 
 COPY ./src/ /app/src/
 
+ENV COREDNS_CM_NAME=coredns
+
 CMD ["/app/src/main.rb"]
